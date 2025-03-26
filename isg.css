@@ -234,3 +234,53 @@ nav ul li a {
 .service-icon svg {
   fill: var(--primaryIconColor);
 }
+/* portovolio section*/
+#portofolio {
+  padding: var(--sectionPandding);
+}
+.portofolio {
+  border-radius: var(--itemBorderRadius);
+  overflow: hidden;
+  border: 1px solid var(--borderColor);
+}
+.portofolio-cover {
+  padding: 2rem 1.5rem;
+}
+.portofolio-cover img {
+  height: 250px; /* Sesuaikan tinggi */
+  width: 100%; /* Menyesuaikan lebar */
+  object-fit: cover; /* Memotong bagian yang berlebih */
+  display: block;
+}
+.portofolio-info {
+  padding: 2rem;
+}
+.portofolio title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+.portofolio h4 {
+  font-weight: 500;
+  font-size: 1.05rem;
+}
+.portofolio-title a svg:hover {
+  fill: var(--primaryIconColor);
+}
+.portofolio-title a svg {
+  transition: 0.2s ease-in-out;
+}
+.portofolio-tags {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem;
+}
+.portofolio-tags div {
+  font-size: 0.9rem;
+
+  border: 1px solid var(--borderColor);
+  padding: 0.4rem 1 rem;
+  color: var(--secondaryTextcolor);
+}

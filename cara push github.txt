@@ -1,0 +1,5 @@
+tulis di terminal 
+
+- git add .
+- git commit -m "Pesan commit sesuai perubahan"
+- git push origin main
