@@ -1,5 +1,6 @@
 tulis di terminal 
 
+- git remote -v  // periksa repository
 - git add .
 - git commit -m "Pesan commit sesuai perubahan"
 - git push origin main
