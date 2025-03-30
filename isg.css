@@ -25,7 +25,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: rob;
+  font-family: Roboto;
 }
 h1,
 h2,
@@ -186,9 +186,18 @@ nav ul li a {
 
 /*SERVICE section*/
 /*UKURAN LOGO*/
+.service.main-container {
+  width: 100%; /* Lebar penuh */
+  max-width: none; /* Hapus batas lebar maksimum */
+  margin: 0; /* Hapus margin auto supaya tidak ada jarak samping */
+  padding: 0 20px; /* Opsional: tambahkan padding biar tidak mepet */
+  height: 80vh; /* Mengisi tinggi layar penuh */
+  padding-top: 50px; /* Tambahkan ruang di atas */
+}
+
 .service-icon svg {
-  width: 50px; /* Sesuaikan ukuran */
-  height: 50px; /* Sesuaikan ukuran */
+  width: 50px;
+  height: 50px;
 }
 .service {
   margin-left: auto;
@@ -196,7 +205,7 @@ nav ul li a {
   padding: 20px;
   margin: 0.5rem 0 1rem;
 }
-#Services {
+#services {
   background-color: var(--secondaryBackgroundColor);
   padding: var(--sectionPandding);
 }
@@ -205,6 +214,7 @@ nav ul li a {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem; /* Atur jarak antar service */
   justify-content: center;
+  align-items: center;
 }
 .service {
   text-align: center; /* Biar isi layanan sejajar */
@@ -217,6 +227,8 @@ nav ul li a {
   margin: 0 auto;
 }
 .services-title {
+  display: flex;
+  justify-content: center;
   text-align: center;
 }
 .service h4 {
@@ -253,7 +265,7 @@ nav ul li a {
   display: block;
 }
 .portofolio-info {
-  padding: 2rem;
+  padding: 2rem 1.5rem;
 }
 .portofolio title {
   display: flex;
@@ -283,4 +295,61 @@ nav ul li a {
   border: 1px solid var(--borderColor);
   padding: 0.4rem 1 rem;
   color: var(--secondaryTextcolor);
+}
+
+/* Style untuk section Skills */
+#skills {
+  padding: var(--sectionPandding);
+  background: var(--secondaryBackgroundColor);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 3rem;
+}
+
+.education {
+  display: flex;
+  gap: 2rem;
+}
+.education .line {
+  padding: 0 0.7rem;
+}
+
+.education .line div {
+  width: 2px;
+  height: 100%;
+  background: var(--borderColor);
+  position: relative;
+}
+.skills-right {
+  display: block;
+  width: fit-content; /* Agar lebarnya hanya sebesar teks */
+  margin-left: auto;
+}
+
+.education-info p {
+  margin: 0.6rem 0 1.4rem;
+}
+.education-years {
+  margin-bottom: 3rem;
+}
+.education .line div::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: var(--borderColor);
+  border-radius: 50%;
+  position: absolute;
+  left: -6px;
+}
+.skills-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 1.5rem;
+}
+.skills-right ul {
+  line-height: 2rem;
+  padding: 0.1rem;
 }
